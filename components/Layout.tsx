@@ -7,7 +7,10 @@ type Props = {
   title?: string
 }
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
+const Layout: React.FC = ({
+  children,
+  title = 'This is the default title',
+}: Props) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -33,7 +36,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     {children}
     <footer>
       <hr />
-      <span>I'm here to stay (Footer)</span>
+      <span>I&apos;m here to stay (Footer)</span>
     </footer>
   </div>
 )

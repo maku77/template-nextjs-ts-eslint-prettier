@@ -1,6 +1,7 @@
 {
   "name": "myapp",
   "version": "0.1.0",
+  "license": "UNLICENSED",
   "scripts": {
     "lint": "run-p -c lint:prettier lint:eslint",
     "lint:prettier": "prettier --check .",

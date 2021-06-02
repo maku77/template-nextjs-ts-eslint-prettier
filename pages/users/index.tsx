@@ -10,7 +10,7 @@ type Props = {
   items: User[]
 }
 
-const WithStaticProps = ({ items }: Props) => (
+const WithStaticProps: React.FC<Props> = ({ items }: Props) => (
   <Layout title="Users List | Next.js + TypeScript Example">
     <h1>Users List</h1>
     <p>
@@ -26,6 +26,7 @@ const WithStaticProps = ({ items }: Props) => (
   </Layout>
 )
 
+// eslint-disable-next-line @typescript-eslint/require-await
 export const getStaticProps: GetStaticProps = async () => {
   // Example for including static props in a Next.js function component page.
   // Don't forget to include the respective types for any props passed into
