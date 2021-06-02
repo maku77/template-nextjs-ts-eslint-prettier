@@ -4,8 +4,16 @@ This is a really simple project that shows the usage of Next.js with TypeScript,
 
 ## How to use it?
 
+### When creating a new Next.js project
+
 ```
-$ yarn dev    # Start dev server
+$ npx create-next-app myapp --example https://github.com/maku77/template-nextjs-ts-eslint-prettier
+```
+
+### When developing
+
+```
+$ yarn dev    # Start Next.js dev server
 $ yarn build  # Build for release
 $ yarn lint   # Lint with Prettier and ESLint
 $ yarn fix    # Autofix with Prettier and ESLint
