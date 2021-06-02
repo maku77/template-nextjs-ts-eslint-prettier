@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "license": "UNLICENSED",
   "scripts": {
-    "lint": "run-p -c lint:prettier lint:eslint",
+    "lint": "run-p -c lint:prettier lint:eslint lint:tsc",
     "lint:prettier": "prettier --check .",
     "lint:eslint": "eslint . --ext .ts,.tsx",
+    "lint:tsc": "tsc",
     "fix": "run-s fix:prettier fix:eslint",
     "fix:prettier": "prettier --write .",
     "fix:eslint": "eslint . --ext .ts,.tsx --fix",
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "type-check": "tsc"
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",
