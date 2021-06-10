@@ -4,12 +4,12 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "run-p -c lint:prettier lint:eslint lint:tsc",
-    "lint:prettier": "prettier --check .",
-    "lint:eslint": "eslint . --ext .ts,.tsx",
+    "lint:prettier": "prettier --check src",
+    "lint:eslint": "eslint src --ext .ts,.tsx",
     "lint:tsc": "tsc",
     "fix": "run-s fix:prettier fix:eslint",
-    "fix:prettier": "prettier --write .",
-    "fix:eslint": "eslint . --ext .ts,.tsx --fix",
+    "fix:prettier": "prettier --write src",
+    "fix:eslint": "eslint src --ext .ts,.tsx --fix",
     "dev": "next",
     "build": "next build",
     "start": "next start"
