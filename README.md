@@ -7,7 +7,7 @@ This is a really simple project that shows the usage of Next.js with TypeScript,
 ### When creating a new Next.js project
 
 ```
-$ npx create-next-app myapp --example https://github.com/maku77/template-nextjs-ts-eslint-prettier
+$ create-next-app myapp --example https://github.com/maku77/template-nextjs-ts-eslint-prettier
 ```
 
 ### When developing
